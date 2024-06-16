@@ -33,10 +33,10 @@
                                     <td>{{ substr($mentor->alamat, 0, 50) }}...</td>
                                     <td>
                                         <a href="{{ route('detailMentor', encrypt($mentor->id)) }}" class="btn btn-info btn-sm">Detail</a>
-                                        <form action="{{ route('destroyMentor',encrypt($mentor->id)) }}" method="POST" style="display:inline;">
+                                        <form id="deleteForm{{ $mentor->id }}" action="{{ route('destroyMentor',encrypt($mentor->id)) }}" method="POST" style="display:inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus mentor ini?')">Hapus</button>
+                                            <button type="button" class="btn btn-danger btn-sm delete-btn" data-id="{{ $mentor->id }}">Hapus</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -48,4 +48,33 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const mentorId = this.getAttribute('data-id');
+                
+                swal({
+                    title: "Apakah Anda yakin?",
+                    text: "Setelah dihapus, Anda tidak akan dapat memulihkan data mentor ini!",
+                    icon: "warning",
+                    buttons: ["Batal", "Ya, hapus"],
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        document.getElementById('deleteForm' + mentorId).submit();
+                    } else {
+                        swal("Mentor tidak dihapus.", {
+                            icon: "info",
+                        });
+                    }
+                });
+            });
+        });
+    });
+</script>
 @endsection
