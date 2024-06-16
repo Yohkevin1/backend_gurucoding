@@ -1,7 +1,7 @@
 ## Capstone Project - Tim C624-PS034
 
 <p align="center">
-  <img src="src/assets/gurucodingicon2.png" alt="Logo_gurucoding" width="300" height="300">
+  <img src="https://gurucoding.cartera.my.id/assets/gurucodingicon2-CGkcyLvv.png" alt="Logo_gurucoding" width="300" height="300">
   <h3 align="center">GuruCoding</h3>
 </p>
 
@@ -19,7 +19,8 @@ Di GuruCoding, tujuan kami adalah untuk membantu individu dan profesional menemu
 <a href="https://laravel.com/"><img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" width="120" height="70"> </a>
 <a href="https://getbootstrap.com/"><img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="70" height="70"> </a>
 <a href="https://jquery.com/"><img src="https://i.pinimg.com/564x/32/6b/af/326bafbf4213ca14742e70531a83dbe4.jpg" alt="jQuery" width="100" height="70"> </a>
-<a href="https://fontawesome.com/"><img src="https://i0.wp.com/blog.fontawesome.com/wp-content/uploads/2020/08/Old-New.png?resize=720%2C480&ssl=1" alt="jQuery" width="100" height="70"> </a>
+<a href="https://fontawesome.com/"><img src="https://i0.wp.com/blog.fontawesome.com/wp-content/uploads/2020/08/Old-New.png?resize=720%2C480&ssl=1" alt="fontawesome" width="100" height="70"> </a>
+<a href="https://sweetalert2.github.io/"><img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="sweetalert2" width="120" height="70"> </a>
 
 ## Repository Front-End GuruCoding 
 
